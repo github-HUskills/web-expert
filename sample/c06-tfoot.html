@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>tfootの使用例</title>
+<style>
+body {
+	font-family: "メイリオ", meiryo;
+}
+table {
+	border-collapse: collapse;
+	margin-top: 2em;
+	width: 500px;
+}
+th, td {
+	border: 1px solid #000000;
+	padding: 8px;
+}
+tr td:nth-child(n+2) {
+	text-align: right;
+}
+</style>
+</head>
+<body>
+<table>
+	<caption><strong>HTML4系の正しい記述</strong><br>
+	（HTML5でもこの記述は可能）</caption>
+	<thead>
+	<tr>
+		<th>項目</th><th>点数</th><th>料金</th>
+	</tr>
+	</thead>
+	<tfoot>
+	<tr>
+		<th colspan="2">合計</th><td>¥15,000-</td>
+	</tr>
+	</tfoot>
+	<tbody>
+	<tr>
+		<td>スニーカー</td><td>1</td><td>¥5,000-</td>
+	</tr>
+	<tr>
+		<td>革靴</td><td>1</td><td>¥10,000-</td>
+	</tr>
+	</tbody>
+</table>
+<table>
+	<caption><strong>HTML5で新たに認められた記述</strong><br>
+	（見た目は変わりません。ソースコードを確認してください）</caption>
+	<thead>
+	<tr>
+		<th>項目</th><th>点数</th><th>料金</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>スニーカー</td><td>1</td><td>¥5,000-</td>
+	</tr>
+	<tr>
+		<td>革靴</td><td>1</td><td>¥10,000-</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+		<th colspan="2">合計</th><td>¥15,000-</td>
+	</tr>
+	</tfoot>
+</table>
+</body>
+</html>

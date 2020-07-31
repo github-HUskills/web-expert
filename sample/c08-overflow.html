@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>overflow</title>
+<style>
+div {
+	float: left;
+	margin: 16px;
+	font-size: 26px;
+	width: 160px;
+	height: 160px;
+	border: 1px solid #666666;
+}
+p {
+	margin: 0;
+}
+.visible { overflow: visible; }
+.scroll { overflow: scroll; }
+.hidden { overflow: hidden; }
+.auto { overflow: auto; }
+</style>
+</head>
+<body>
+	<div class="visible">
+		<p>overflowは、ボックスにコンテンツが収まりきらなかったときの表示方法を指定するプロパティです。</p>
+	</div>
+	<div class="scroll">
+		<p>overflowは、ボックスにコンテンツが収まりきらなかったときの表示方法を指定するプロパティです。</p>
+	</div>
+	<div class="hidden">
+		<p>overflowは、ボックスにコンテンツが収まりきらなかったときの表示方法を指定するプロパティです。</p>
+	</div>
+	<div class="auto">
+		<p>overflowは、ボックスにコンテンツが収まりきらなかったときの表示方法を指定するプロパティです。</p>
+	</div>
+</body>
+</html>

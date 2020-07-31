@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>必須項目であることを伝える正しい例</title>
+<style>
+body {
+	font-family: "メイリオ", meiryo, sans-serif;
+}
+.mark {
+	margin: 1em 0;
+	padding: 0;
+	list-style-type: none;
+}
+.mark li {
+	overflow: hidden;
+	font-size: 0.85em;
+}
+li img {
+	position: relative;
+	top: 2px;
+}
+.taro { color: #3984cb; }
+.hanako { color: #cb397a; }
+</style>
+</head>
+<body>
+	<h1>正しい例</h1>
+	<p>今日の当番</p>
+	<ol>
+		<li>掃除（<span class="taro">太郎</span>）</li>
+		<li>洗濯（<span class="hanako">花子</span>）</li>
+		<li>食事（<span class="taro">太郎</span>）</li>
+	</ol>
+	<p>今日の当番</p>
+	<ol>
+		<li>掃除　<img src="taro2.png" alt="太郎"></li>
+		<li>洗濯　<img src="hanako2.png" alt="花子"></li>
+		<li>食事　<img src="taro2.png" alt="太郎"></li>
+	</ol>
+	<ul class="mark">
+		<li><img src="taro2.png" alt="">　<span class="taro">四角は太郎</span></li>
+		<li><img src="hanako2.png" alt="">　<span class="hanako">丸は花子</span></li>
+	</ul>
+	<h1>正しくない例</h1>
+	<p>今日の当番</p>
+	<ol>
+		<li>掃除　<img src="taro1.png" alt="太郎"></li>
+		<li>洗濯　<img src="hanako1.png" alt="花子"></li>
+		<li>食事　<img src="taro1.png" alt="太郎"></li>
+	</ol>
+	<ul class="mark">
+		<li><img src="taro1.png" alt="">　<span class="taro">青は太郎</span></li>
+		<li><img src="hanako1.png" alt="">　<span class="hanako">赤は花子</span></li>
+	</ul>
+</body>
+</html>

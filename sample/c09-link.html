@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>リンクテキスト・通常テキストのデザイン</title>
+<style>
+body {
+	font-family: "メイリオ", meiryo, sans-serif;
+}
+#correct a {
+	color: #0794ad;
+}
+#correct a:visited {
+	color: #0a6a7a;
+}
+#wrong a {
+	color: inherit;
+	text-decoration: none;
+}
+#wrong strong {
+	font-weight: normal;
+	text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<p id="correct"><a href="#">リンクテキスト</a>と通常のテキストの<strong>見分けが付くデザイン</strong>・付かないデザイン</p>
+<p id="wrong"><a href="#">リンクテキスト</a>と通常のテキストの<strong>見分けが付くデザイン</strong>・付かないデザイン</p>
+</body>
+</html>

@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+/* style1.cssからstyle2.cssを読み込む */
+@import url(style2.css);
+
+p {
+	background-color: #008800;
+	color: #ffffff;
+}

@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>table-layout</title>
+<style>
+body {
+	font-family: meiryo, "メイリオ";
+}
+table {
+	width: 600px;
+}
+#collapse {
+	border-collapse: collapse;
+}
+#separate {
+	border-collapse: separate;
+}
+th,
+table td {
+	border: 1px solid #ccc;
+}
+</style>
+</head>
+<body>
+	<div class="wrapper">
+		<p>border-collapse: collapse;</p>
+		<table id="collapse">
+			<thead>
+			<tr>
+				<th scope="col">項目</th>
+				<th scope="col">説明</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<th scope="row">挙式会場</th>
+				<td>アルカンジュ（チャペル）</td>
+			</tr>
+			<tr>
+				<th scope="row">披露宴</th>
+				<td>お料理、お飲み物、花嫁衣裳（2種類）、花婿衣裳（2種類）、招待状、ブーケ、引き出物、写真撮影など</td>
+			</tr>
+			<tr>
+				<th scope="row">費用</th>
+				<td>計40名様…1,852,381円<br>計60名様…2,743,290円</td>
+			</tr>
+			<tr>
+				<th rowspan="3" scope="rowgroup">オプション</th>
+				<td>オリジナルスイーツ</td>
+			</tr>
+			<tr>
+				<td>お子様用お料理</td>
+			</tr>
+			<tr>
+				<td>キャンドルサービス</td>
+			</tr>
+			</tbody>
+		</table>
+		<p>border-collapse: separate;</p>
+		<table id="separate">
+			<thead>
+			<tr>
+				<th scope="col">項目</th>
+				<th scope="col">説明</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<th scope="row">挙式会場</th>
+				<td>アルカンジュ（チャペル）</td>
+			</tr>
+			<tr>
+				<th scope="row">披露宴</th>
+				<td>お料理、お飲み物、花嫁衣裳（2種類）、花婿衣裳（2種類）、招待状、ブーケ、引き出物、写真撮影など</td>
+			</tr>
+			<tr>
+				<th scope="row">費用</th>
+				<td>計40名様…1,852,381円<br>計60名様…2,743,290円</td>
+			</tr>
+			<tr>
+				<th rowspan="3" scope="rowgroup">オプション</th>
+				<td>オリジナルスイーツ</td>
+			</tr>
+			<tr>
+				<td>お子様用お料理</td>
+			</tr>
+			<tr>
+				<td>キャンドルサービス</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
